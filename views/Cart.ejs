@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Cart</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td><h3>Product Name</h3></td>
+                <td><h3>Quantity</h3></td>
+                <td><h3>Price</h3></td>
+            </tr>
+            <tr>
+                <%- for(var i=0;i<det.length();i++)
+                {%><td>
+                    <%- document.write(data[i].productname);%>
+                </td>
+                <td><%- document.writeln(data[i].Quantity);%></td>
+                <td><%- document.writeln(data[i].price);%></td><%-
+                }
+            %>
+            </tr>
+        </table>
+    </body>
+</html>
